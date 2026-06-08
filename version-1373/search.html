@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索视频-精品日韩剧</title>
+  <meta name="description" content="搜索日韩免费视频资源、电影大片与热播剧集，按标题、类型、标签快速查找。">
+  <meta name="keywords" content="搜索,日韩免费视频资源,在线观看,电影大片,热播剧集,高清,影视作品,点播">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="精品日韩剧">
+      <span class="brand-mark">映</span>
+      <span class="brand-text">精品日韩剧</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./rankings.html">排行榜</a>
+      <a class="active" href="./search.html">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、类型" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./rankings.html">排行榜</a>
+    <a href="./search.html">搜索</a>
+  </nav>
+</header>
+
+<main class="sub-page">
+  <section class="page-hero search-hero amber-hero">
+    <div class="container">
+      <span class="page-kicker">全站搜索</span>
+      <h1>搜索视频</h1>
+      <p>输入片名、类型、年份、地区或标签，快速找到想看的影视作品。</p>
+      <form class="big-search" action="./search.html" method="get">
+        <input id="searchInput" type="search" name="q" placeholder="输入关键词搜索" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container">
+      <div class="search-summary" id="searchSummary">输入关键词开始搜索</div>
+      <div class="movie-grid archive-grid" id="searchResults"></div>
+      <div class="empty-state" id="emptyState">
+        <strong>发现更多精彩内容</strong>
+        <p>可以从分类页或排行榜继续浏览精选影视作品。</p>
+        <a class="primary-btn" href="./categories.html">浏览分类</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">精品日韩剧</a>
+      <p>整合日韩免费视频资源，实现在线观看电影大片与热播剧集。本站内容涵盖高清影视作品，提供便捷的在线点播服务。</p>
+    </div>
+    <div>
+      <h2>快速入口</h2>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">热门排行榜</a>
+      <a href="./search.html">站内搜索</a>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <a href="./category-action.html">动作犯罪</a>
+      <a href="./category-romance.html">爱情情感</a>
+      <a href="./category-comedy.html">喜剧综艺</a>
+      <a href="./category-suspense.html">悬疑惊悚</a>
+      <a href="./category-drama.html">剧情经典</a>
+      <a href="./category-fantasy.html">科幻奇幻</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 精品日韩剧 · 高清影视作品在线点播</div>
+</footer>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="./data.js" defer></script>
+<script src="./app.js" defer></script>
+</body>
+</html>
